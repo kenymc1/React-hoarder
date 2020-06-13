@@ -7,4 +7,5 @@ const itemShape = PropTypes.shape({
   itemDescription: PropTypes.string.isRequired,
   uid: PropTypes.string.isRequired,
 });
+
 export default { itemShape };
