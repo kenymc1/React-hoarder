@@ -7,17 +7,19 @@ const baseUrl = firebaseConfig.firebaseKeys.databaseURL;
 
 
 const getItemsByUid = (uid) => new Promise((resolve, reject) => {
+  console.log(uid);
   axios.get(`${baseUrl}/items.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => {
       const fbItems = response.data;
-      const items = [];
+      console.error(response);
+      const itemsArray = [];
       if (fbItems) {
         Object.keys(fbItems).forEach((fbId) => {
           fbItems[fbId].id = fbId;
-          items.push(fbItems[fbId]);
+          itemsArray.push(fbItems[fbId]);
         });
       }
-      resolve(items);
+      resolve(itemsArray);
     })
     .catch((err) => reject(err));
 });

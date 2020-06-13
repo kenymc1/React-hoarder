@@ -1,23 +1,24 @@
 import React from 'react';
 
+import itemShape from '../../../helpers/propz/itemShape';
 import './ItemCard.scss';
 
-// "itemName"
-// "itemImage"
-// "itemDescription"
-// "uid"
 
 class ItemCard extends React.Component {
+  static propTypes = {
+    item: itemShape.itemShape,
+  }
+
   render() {
     const { item } = this.props;
     return (
       <div className="ItemCard col-3">
         <div className="card">
-            <img src="..." class="card-img-top" alt="...">{item.itemImage}</img>
-              <div className="card-body">
-                 <h5 className="card-title">{item.ItemName}</h5>
-                  <p class="card-text">{item.itemDescription}</p>
-              </div>
+        <div className="card-body">
+            <img className="img" width="100%" src={item.itemImage} alt="Logo" />
+            <h5 className="card-title">{item.itemName}</h5>
+            <p className="card-text">{item.itemDescription}</p>
+          </div>
         </div>
       </div>
 
