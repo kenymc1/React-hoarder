@@ -7,7 +7,7 @@ This project we are able to show and add useless stuff we have.
 HTML, CSS, React, and BootStrap
 
 ## Screenshots
-![]
+![https://github.com/kenymc1/React-hoarder/issues/2#issue-640090684]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
