@@ -1,3 +1,14 @@
+# README.md
+
+## Description
+This project we are able to show and add useless stuff we have.
+
+## Technology Used
+HTML, CSS, React, and BootStrap
+
+## Screenshots
+![]
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
